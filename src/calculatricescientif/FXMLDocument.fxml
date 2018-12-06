@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="337.0" prefWidth="266.0" style="-fx-background-color: #534535; -fx-border-color: #534535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatricescientif.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="ope" alignment="CENTER_RIGHT" layoutY="1.0" prefHeight="46.0" prefWidth="276.0" style="-fx-background-color: #DA7000;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font></TextField>
+      <Button fx:id="button" layoutY="47.0" mnemonicParsing="false" onAction="#vide" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535; -fx-font-style: #FDFDFD;" text="AC" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="69.0" layoutY="47.0" mnemonicParsing="false" onAction="#efface" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="&lt;--" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button11" layoutX="138.0" layoutY="47.0" mnemonicParsing="false" onAction="#pourcent" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="\%" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button12" layoutX="207.0" layoutY="47.0" mnemonicParsing="false" onAction="#ecrireOperateur" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #DA7000;" text="/" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button121" layoutX="207.0" layoutY="99.0" mnemonicParsing="false" onAction="#ecrireMultiplication" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #DA7000;" text="X" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button111" layoutX="138.0" layoutY="99.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="7" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button13" layoutX="69.0" layoutY="99.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="8" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutY="99.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="9" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button21" layoutY="158.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="6" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button131" layoutX="69.0" layoutY="158.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="5" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1111" layoutX="138.0" layoutY="158.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="4" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1211" layoutX="207.0" layoutY="158.0" mnemonicParsing="false" onAction="#ecrireOperateur" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #DA7000;" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button22" layoutY="217.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button132" layoutX="69.0" layoutY="217.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1112" layoutX="138.0" layoutY="217.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1212" layoutX="207.0" layoutY="217.0" mnemonicParsing="false" onAction="#ecrireOperateur" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #DA7000;" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button23" layoutY="276.0" mnemonicParsing="false" onAction="#ecrireNombre" prefHeight="59.0" prefWidth="139.0" style="-fx-background-color: #534535;" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1113" layoutX="138.0" layoutY="276.0" mnemonicParsing="false" onAction="#ecrireOperateur" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #534535;" text="," textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1213" layoutX="207.0" layoutY="276.0" mnemonicParsing="false" onAction="#resultat" prefHeight="59.0" prefWidth="69.0" style="-fx-background-color: #DA7000;" text="=" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
